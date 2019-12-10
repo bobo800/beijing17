@@ -19,6 +19,6 @@ class TestLogin(unittest.TestCase):
         # 提取token
         token = r.json().get("data")
         api.headers['Authorization'] = "Bearer " + token
-        print("登录成功后的headers值 为：", api.headers)
+        print("登录成功后的headers值  为：", api.headers)
         # 断言
         assert_common(self, r)
